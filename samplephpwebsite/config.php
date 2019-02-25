@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Used to store website configuration information.
  *
@@ -19,7 +18,8 @@ function config($key = '')
         'content_path' => 'content',
         'pretty_uri' => true,
         'version' => 'v2.0',
+        'nginx_version' => 'nginx/1.12',
+        'php_version' => '7.1',
     ];
-
     return isset($config[$key]) ? $config[$key] : null;
 }
