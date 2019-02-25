@@ -36,5 +36,8 @@ freeStyleJob('devops_master') {
     steps {
       shell('cd samplephpwebsite')
       shell('docker build -t appPhp .')
+      shell('docker run appPhp')
+      shell('docker commit -a baptistechene 5319d921977b baptistechene/devops_rendu_v1:latest')
+      shell('docker push baptistechene/devops_rendu_v1:latest')
     }
 }
