@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Used to store website configuration information.
  *
@@ -20,6 +21,11 @@ function config($key = '')
         'version' => 'v2.0',
         'nginx_version' => 'nginx/1.12',
         'php_version' => '7.1',
+        'php_modules' => ['mysqli', 'gd'],
+        'mariadb_version' => '10.1',
+        'db_user' => 'php_user',
+        'db_password' => 'sdrugntqqsciur',
     ];
+
     return isset($config[$key]) ? $config[$key] : null;
 }
