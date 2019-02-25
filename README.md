@@ -20,3 +20,9 @@ On arrive sur l'interface jenkins
 - Se servir du script dans le fichier Jobjenkins.groovy
 - Sauvegarder
 - lancer le build
+
+
+
+Source:
+https://wiki.jenkins.io/display/JENKINS/Docker+Compose+Build+Step+Plugin
+https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.DockerBuildAndPublishContext.registryCredentials
