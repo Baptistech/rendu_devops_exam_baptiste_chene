@@ -2,7 +2,7 @@ freeStyleJob('devops_master') {
     logRotator(-1, 10)
     jdk('Java 6')
     scm {
-        github('https://gitlab.com/baptch/rendu_devops_exam_baptiste_chene', 'master')
+        github('https://github.com/Baptistech/rendu_devops_exam_baptiste_chene', 'master')
     }
     triggers {
         githubPush()
