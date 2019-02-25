@@ -1,0 +1,23 @@
+version: "3.2"
+services:
+  php:
+    build: './samplephpwebsite/'
+    networks:
+      - backend
+    volumes:
+      - ./samplephpwebsite/:/var/www/html/
+      
+  apache:
+    build: './apache/'
+    depends_on:
+      - php
+    networks:
+      - backend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./samplephpwebsite/:/var/www/html/
+
+networks:
+  backend:
+    driver: bridge
