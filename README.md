@@ -1,8 +1,11 @@
 # RENDU devops examen
 
 ## Tester la version
+```
 docker-compose build
 docker-compose up
+```
+
 
 ## Lancer les commandes suivantes
 Avoir jenkins de lancer
